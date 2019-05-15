@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div>Hola</div>
+    <div>Lector de codigo de barras</div>
     <div id="resultado"></div>
     <div id="camera"></div>
 
@@ -37,7 +37,7 @@
 
         Quagga.onDetected(function (data) {
             console.log(data.codeResult.code);
-            alert('funciono');
+            alert(data.codeResult.code);
             document.querySelector('#resultado').innerText = data.codeResult.code;
         });
 
