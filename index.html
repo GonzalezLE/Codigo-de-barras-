@@ -15,7 +15,14 @@
 
     <script src="./js/quagga.min.js"></script>
 
+    <p id="datos">
+        DAtos Producto
+    </p>
+
+  
+
     <script>
+        var info= document.getElementById('datos');
 
         Quagga.init({
             inputStream: {
@@ -37,6 +44,7 @@
 
         Quagga.onDetected(function (data) {
             console.log(data.codeResult.code);
+            alert('funciono');
             document.querySelector('#resultado').innerText = data.codeResult.code;
         });
 
