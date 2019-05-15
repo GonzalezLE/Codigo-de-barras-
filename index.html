@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <div>Hola</div>
     <div id="resultado"></div>
     <div id="camera"></div>
 
@@ -37,6 +37,7 @@
 
         Quagga.onDetected(function (data) {
             console.log(data.codeResult.code);
+            alert('funciono');
             document.querySelector('#resultado').innerText = data.codeResult.code;
         });
 
